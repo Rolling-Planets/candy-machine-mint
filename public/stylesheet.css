@@ -1,84 +1,86 @@
-
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
 
 #root{
     text-align: center;
 }
 #menu{
-    font-family: 'helvetica';
+    font-family: 'Poppins';
     color:#f9f9f9;
 }
 
 
- #hero { 
-    /* use this for menu */
-    margin-top: -9rem;
-    /* text-align: center; */
+  #bg { 
+    margin-top: -5rem;
+    text-align: center;
+    display: absolute;
     color: white;
     background: url('/imagesHp/heroImage.png');
     background-size:cover;
     height: 70rem;
-  }
+    align-content: center;
+
+  } 
+
+
 
   h2{
-    margin-top: 11rem;
-    margin-left: 35%;
     font-family: 'Spartan';
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
     line-height: 150%;
-    /* or 60px */
-    display: flex ;
-    position: absolute;
-    /* align-items: center; */
     text-align: center;
     text-transform: uppercase;
     color: #f9f9f9;
   }
 
 p{
-position: absolute;
-width: 620px;
-height: 120px;
-left: 35%;
-top: 11.5rem;
 
-font-family: Poppins;
+/* justify-content: center;
+text-align: center; */
+
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 150%;
 /* or 30px */
-
-text-align: center;
-
 color: #f9f9f9;
 
   }
 
-  #showcase {
-    position: absolute;
-    width: 100%;
-    height: 517px;
-    /* left: 1px; */
-    background: linear-gradient(179.59deg, #4B0EAC 0.36%, rgba(17, 6, 32, 0) 99.64%);
-    backdrop-filter: blur(33px);
-    /* Note: backdrop-filter has minimal browser support */
+#showcase {
+  margin-top: -2rem;
+  height: 407px; 
+  background: linear-gradient(179.59deg, #4B0EAC 0.36%, rgba(17, 6, 32, 0) 99.64%);
+  backdrop-filter: blur(33px);
+  text-align: center;
 }
 
 img{
-position: absolute;
-margin-top: 20%;
+/* margin-left: 1rem; */
 width: 256px;
 height: 256px;
 /* left: 555px; */
 /* background: url(logo192.png); */
 border-radius: 20px;
-filter: drop-shadow(0px 0px 24px rgba(255, 247, 247, 0.15));
+filter: drop-shadow(0px 0px 14px rgba(223, 142, 255, 0.15));
 }
- #joinus{
-    width: 100%;
-    height: 517px;
-    position: absolute;
-    margin-top: 35%;
- }
+/* 
+.col-md-4{
+  background-image: url('left.png');
+  background-repeat: no-repeat;
+  height: 657px;
+} */
+.social {
+  height:64px; 
+  width:auto; 
+}
+
+.social:hover{
+  height:100px; 
+  width:auto; 
+}
