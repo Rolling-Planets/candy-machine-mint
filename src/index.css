@@ -14,4 +14,8 @@ code {
     monospace;
 }
 
-
+.bg-element{
+background: linear-gradient(179.59deg, #4B0EAC 0.36%, rgba(17, 6, 32, 0) 99.64%);
+backdrop-filter: blur(33px);
+height: 300px;
+}
