@@ -49,26 +49,45 @@
   }
 
 p{
-
-/* justify-content: center;
-text-align: center; */
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 150%;
-/* or 30px */
 color: #f9f9f9;
+}
 
-  }
+h4{
+  padding-top:2rem;
+font-family: 'Spartan';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+display: relative;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+background: -webkit-linear-gradient(#783BD8, #4B0EAC);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 #showcase {
-  margin-top: -2rem;
-  height: 407px; 
+  /* margin-top: -2rem; */
+  height: 457px; 
   background: linear-gradient(179.59deg, #4B0EAC 0.36%, rgba(17, 6, 32, 0) 99.64%);
   backdrop-filter: blur(33px);
   text-align: center;
+}
+
+#community{
+  /* margin-top: -2rem; */
+  height: 707px; 
+  background: linear-gradient(179.59deg, #4B0EAC 0.36%, rgba(17, 6, 32, 0) 99.64%);
+  backdrop-filter: blur(33px);
 }
 
 img{
@@ -94,4 +113,169 @@ filter: drop-shadow(0px 0px 14px rgba(223, 142, 255, 0.15));
 .social:hover{
   height:100px; 
   width:auto; 
+}
+
+
+
+
+
+
+/* Roadmap CSS */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+
+  background: linear-gradient(180deg, #783BD8 0%, #4B0EAC 100%);
+  /* opacity: 0.88; */
+/* blur */
+
+  backdrop-filter: blur(33px);
+/* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 18px;
+  
+  top: 1rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+
+  background: linear-gradient(180deg, #783BD8 0%, #4B0EAC 100%);
+  /* opacity: 0.88; */
+/* blur */
+
+  backdrop-filter: blur(33px);
+/* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 18px;
+
+
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -25.3%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 25.2%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #783BD8;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #783BD8;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #783BD8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #783BD8 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background: linear-gradient(180deg, #783BD8 0%, #4B0EAC 100%);
+  opacity: 0.88;
+/* blur */
+
+  backdrop-filter: blur(33px);
+/* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 18px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
 }
