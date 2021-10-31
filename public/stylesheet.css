@@ -1,16 +1,36 @@
 .container-fluid{
   width: 100%;
-
 }
 
 #root{
     text-align: center;
+    /* background: linear-gradient(180deg, #783BD8 0%, #4B0EAC 100%);
+    border-radius: 18px; */
+    margin-top: -1rem; 
 }
 #menu{
     font-family: 'Poppins';
     color:#f9f9f9;
-}
+    width: 90%;
+    height: 5rem;
+    left: 5rem;
+    /* top: 12rem; */
+    justify-content: space-evenly;
+    background: linear-gradient(90.17deg, rgba(12, 12, 35, 0.57) 49.91%, rgba(113, 113, 166, 0.57) 106.84%);
+    backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+    padding-top: 2rem;
+    border-radius: 0px 0px 15px 15px;
+    position: fixed;
+    z-index: 2;
+  }
 
+
+ .logo{
+   width:300px;
+   height:auto;
+   margin-top: -1rem;
+ }
 
   #bg { 
     margin-top: -5rem;
@@ -21,9 +41,7 @@
     background-size:cover;
     height: 70rem;
     align-content: center;
-
   } 
-
 
 
   h2{
@@ -111,9 +129,10 @@ filter: drop-shadow(0px 0px 14px rgba(223, 142, 255, 0.15));
 }
 
 .social:hover{
-  height:100px; 
+  height: 84px; 
   width:auto; 
 }
+
 
 
 
@@ -155,6 +174,7 @@ filter: drop-shadow(0px 0px 14px rgba(223, 142, 255, 0.15));
   left: 50%;
   margin-left: -3px;
 }
+
 
 
 /* Container around content */
