@@ -1,0 +1,67 @@
+p {
+  font-size: 14px; 
+ 
+}
+
+.heroText {
+  padding: 0 5% 0 5%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4{
+  font-size: 14px;
+}
+
+.logo{
+  scale: 0.5;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+
+#showcase {
+  /* margin-top: -2rem; */
+  scale: 0.5;
+}
+
+#community{
+  scale: 0.5;
+}
+
+img{
+  scale: 0.4;
+
+}
+/* 
+.col-md-4{
+  background-image: url('left.png');
+  background-repeat: no-repeat;
+  height: 657px;
+} */
+.social {
+  scale: 0.25;
+
+}
+
+
+
+
+
+
+
+
+/* Roadmap CSS */
+
+/* .timeline{
+  scale: 0.5;
+} */
